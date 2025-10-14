@@ -1,4 +1,5 @@
 import { useState } from 'react';
+const scriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL;
 
 function BetaRegistrationPage() {
   const [formData, setFormData] = useState({
@@ -31,10 +32,8 @@ function BetaRegistrationPage() {
     setIsSubmitting(true);
     setMessage('');
     
-    const SPREADSHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbxSdb76wBgXgfRajsk4BqXyYXCqjQk0hAl_vfhPbmclLG4z9sifFyycqLrrgUO6QMeX/exec";
-
     try {
-      await fetch(SPREADSHEET_ENDPOINT, {
+      await fetch(scriptUrl, {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
