@@ -24,6 +24,7 @@ function Header() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-6">
           <Link to="/" className={linkClasses}>Home</Link>
+          <Link to="/beta" className="text-white bg-primary py-1 px-3 rounded-full hover:bg-green-600 transition-colors">Beta Sign-up</Link> 
           <Link to="/download" className={linkClasses}>Download</Link>
           <Link to="/privacy" className={linkClasses}>Privacy Policy</Link>
         </div>
@@ -39,6 +40,7 @@ function Header() {
         <div className="md:hidden glass-effect p-4 absolute w-full top-full">
           <div className="flex flex-col space-y-3">
             <Link to="/" className={linkClasses} onClick={toggleMenu}>Home</Link>
+             <Link to="/beta" className={linkClasses} onClick={toggleMenu}>Beta Sign-up</Link>
             <Link to="/download" className={linkClasses} onClick={toggleMenu}>Download</Link>
             <Link to="/privacy" className={linkClasses} onClick={toggleMenu}>Privacy Policy</Link>
           </div>
