@@ -24,9 +24,9 @@ function Header() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-6">
           <Link to="/" className={linkClasses}>Home</Link>
-          <Link to="/beta" className="text-white bg-primary py-1 px-3 rounded-full hover:bg-green-600 transition-colors">Beta Sign-up</Link> 
-          <Link to="/download" className={linkClasses}>Download</Link>
-          <Link to="/privacy" className={linkClasses}>Privacy Policy</Link>
+          <Link to="/#/beta" className="text-white bg-primary py-1 px-3 rounded-full hover:bg-green-600 transition-colors">Beta Sign-up</Link> 
+          <Link to="/#/download" className={linkClasses}>Download</Link>
+          <Link to="/#/privacy" className={linkClasses}>Privacy Policy</Link>
         </div>
         
         {/* Mobile Menu Button */}

@@ -15,7 +15,7 @@ function IntroSection() {
           {/* Call to Action - Using a standard <a> here for simplicity, link to your app store */}
           <a 
             className="bg-green-400 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 inline-block shadow-lg shadow-green-400/20" 
-            href="/beta"
+            href="/#/beta"
           >
             Beta Sign-Up
           </a>
