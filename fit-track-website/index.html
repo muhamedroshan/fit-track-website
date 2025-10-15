@@ -7,6 +7,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fit Track - Your Ultimate Workout Partner</title>
+    <script>
+      // Single Page Apps routing script
+      // Get the requested path from the URL
+      var path = window.location.pathname;
+
+      // Check if the path is not the root index file
+      if (path !== '/' && path !== '/index.html') {
+        // Save the requested path to local storage
+        localStorage.setItem('redirect_to', path);
+      }
+
+      // Redirect all 404s to the home page (index.html)
+      // The React Router will then read the actual URL from the address bar
+      // and display the correct component.
+      window.location.replace('/');
+    </script>
   </head>
   <body>
     <div id="root"></div>
