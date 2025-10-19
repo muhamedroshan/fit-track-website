@@ -1,0 +1,50 @@
+# Logs
+./fit-track-website/logs
+./fit-track-website/*.log
+./fit-track-website/npm-debug.log*
+./fit-track-website/yarn-debug.log*
+./fit-track-website/yarn-error.log*
+./fit-track-website/pnpm-debug.log*
+./fit-track-website/lerna-debug.log*
+
+./fit-track-website/node_modules
+./fit-track-website/dist
+./fit-track-website/dist-ssr
+./fit-track-website/*.local
+
+# Editor directories and files
+./fit-track-website/.vscode/*
+./fit-track-website/!.vscode/extensions.json
+./fit-track-website/.idea
+./fit-track-website/.DS_Store
+./fit-track-website/*.suo
+./fit-track-website/*.ntvs*
+./fit-track-website/*.njsproj
+./fit-track-website/*.sln
+./fit-track-website/*.sw?
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.env
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
