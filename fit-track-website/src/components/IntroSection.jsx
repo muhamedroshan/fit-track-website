@@ -1,37 +1,46 @@
-// Note: You should save your app screen image in your public/assets or src/assets folder
-import appScreenshot from '../assets/app-screenshot.png'; // Placeholder for the actual image file
+import appLogo from '../assets/app-logo.png';
+import DownloadSection from './DownloadSection';
+import { APP_CONFIG } from '../config/appConfig';
 
-function IntroSection() {
+export default function IntroSection() {
   return (
-    <section className="grid md:grid-cols-2 items-center gap-12">
-      <div className="text-center md:text-left">
-        {/* Title/Name */}
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">Fit Track</h1>
-        {/* Tagline */}
-        <p className="text-lg md:text-xl text-gray-400 max-w-xl mx-auto md:mx-0">
-          Your ultimate companion for tracking workouts, planning your fitness journey, and achieving your goals with precision and style.
-        </p>
-        <div className="mt-8">
-          {/* Call to Action - Using a standard <a> here for simplicity, link to your app store */}
-          <a 
-            className="bg-green-400 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 inline-block shadow-lg shadow-green-400/20" 
-            href="/#/beta"
-          >
-            Beta Sign-Up
-          </a>
-        </div>
-      </div>
-      {/* Image */}
-      <div className="flex justify-center">
-        {/* Using a relative path for the image */}
+    <section className="flex flex-col items-center justify-center text-center pt-8 pb-12">
+      {/* App Logo on top of the text */}
+      <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gray-900 border border-gray-800 p-2 shadow-lg mb-6 flex items-center justify-center">
         <img 
-          alt="App screen on a phone" 
-          className="w-full max-w-sm md:max-w-md rounded-3xl shadow-2xl shadow-green-400/20 transform hover:scale-105 transition-transform duration-300" 
-          src={appScreenshot} 
+          src={appLogo} 
+          alt="Fit Track App Logo" 
+          className="w-full h-full object-contain rounded-xl"
         />
+      </div>
+
+      {/* Main Title with Gradient */}
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+        Fit Track
+      </h1>
+
+      {/* Tagline */}
+      <p className="text-base sm:text-lg text-gray-400 max-w-xl mx-auto leading-relaxed mb-6">
+        {APP_CONFIG.tagline}
+      </p>
+
+      {/* Highlights */}
+      <div className="flex flex-wrap items-center justify-center gap-2 max-w-lg mx-auto mb-2">
+        {APP_CONFIG.highlights.map((item, idx) => (
+          <span
+            key={idx}
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gray-900/80 border border-gray-800 text-gray-300 text-xs"
+          >
+            <span className="material-icons text-emerald-400 text-sm">{item.icon}</span>
+            <span>{item.label}</span>
+          </span>
+        ))}
+      </div>
+
+      {/* Download Section */}
+      <div id="download" className="w-full">
+        <DownloadSection />
       </div>
     </section>
   );
 }
-
-export default IntroSection;

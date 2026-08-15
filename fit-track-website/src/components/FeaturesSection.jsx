@@ -1,6 +1,5 @@
 import FeatureCard from './FeatureCard';
 
-// --- Data extracted from your HTML to make the section dynamic ---
 const featuresData = [
   { icon: 'analytics', title: 'Track and Record Workouts', description: 'Log your sets, reps, weight, and rest time with our intuitive interface. See your progress at a glance.' },
   { icon: 'event_note', title: 'Plan Workouts in Advance', description: 'Easily schedule your workouts by day or date. Stay organized and committed to your routine.' },
@@ -17,13 +16,22 @@ const featuresData = [
 
 function FeaturesSection() {
   return (
-    <section className="mt-24">
-      <h2 className="text-3xl font-bold text-center mb-12 text-white">Features</h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Using the map function to render a list of cards from the data */}
+    <section className="mt-20">
+      {/* Section Header */}
+      <div className="text-center max-w-xl mx-auto mb-10">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2">
+          Features
+        </h2>
+        <p className="text-gray-400 text-sm">
+          Everything you need to track workouts and achieve your fitness goals.
+        </p>
+      </div>
+
+      {/* Grid of features */}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {featuresData.map((feature, index) => (
           <FeatureCard 
-            key={index} // Using index as key since the data is static
+            key={index}
             icon={feature.icon}
             title={feature.title}
             description={feature.description}

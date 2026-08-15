@@ -1,15 +1,15 @@
-// FeatureCard is a reusable component that receives data as props
 function FeatureCard({ icon, title, description }) {
   return (
-    <div className="glass-effect p-8 rounded-lg transform hover:-translate-y-2 transition-transform duration-300">
-      {/* Icon */}
-      <span className="material-icons text-green-400 text-4xl mb-4">
+    <div className="bg-gray-900/60 border border-gray-800 hover:border-gray-700 p-6 rounded-2xl transition-colors flex flex-col items-start">
+      <span className="material-icons text-emerald-400 text-3xl mb-3">
         {icon}
       </span>
-      {/* Title */}
-      <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
-      {/* Description */}
-      <p className="text-gray-400">{description}</p>
+      <h3 className="text-base font-semibold mb-1.5 text-white">
+        {title}
+      </h3>
+      <p className="text-gray-400 text-sm leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 }
