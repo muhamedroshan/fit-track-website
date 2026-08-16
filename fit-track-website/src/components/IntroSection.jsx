@@ -9,13 +9,13 @@ export default function IntroSection() {
       <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gray-900 border border-gray-800 p-2 shadow-lg mb-6 flex items-center justify-center">
         <img 
           src={appLogo} 
-          alt="Fit Track App Logo" 
+          al t="Fit Track App Logo" 
           className="w-full h-full object-contain rounded-xl"
         />
       </div>
 
       {/* Main Title with Gradient */}
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 bg-gradient-to-r from-green-400 to-blue-500 text-transparent bg-clip-text">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 bg-clip-text">
         Fit Track
       </h1>
 

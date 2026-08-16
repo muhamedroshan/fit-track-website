@@ -21,7 +21,7 @@ function PrivacyPolicyPage() {
       {/* Header */}
       <div className="mb-10">
         <h1 className="text-3xl font-bold text-white mb-2">Privacy Policy</h1>
-        <p className="text-gray-500 text-sm">Last Updated: August 15, 2026</p>
+        <p className="text-gray-500 text-sm">Last Updated: August 16, 2026</p>
       </div>
 
       {/* Intro */}
@@ -163,7 +163,76 @@ function PrivacyPolicyPage() {
         </p>
       </Section>
 
-      <Section title="7. Changes to This Policy">
+      <Section title="7. Data Retention">
+        <p>
+          <Highlight>Local Data</Highlight> — All fitness data stored locally on your device
+          (workout logs, body measurements, goals, and personal settings) is retained on your device
+          for as long as the app is installed. This data is{" "}
+          <strong className="text-white">automatically deleted</strong> when you uninstall the app
+          or clear the app's data through your device settings.
+        </p>
+        <p>
+          <Highlight>AI Chat History</Highlight> — Your AI Coach chat history and related fitness
+          data sent to our servers are retained for a maximum of{" "}
+          <strong className="text-white">12 months</strong> from the date of your last interaction
+          with the AI Coach. After this period, your chat data is automatically and permanently
+          deleted from our servers. You may also request earlier deletion at any time (see Section 8
+          below).
+        </p>
+        <p>
+          <Highlight>Account Data</Highlight> — If you create an account, basic account information
+          (such as your email address) is retained for as long as your account is active. Upon
+          account deletion, all associated data is permanently removed within{" "}
+          <strong className="text-white">30 days</strong>.
+        </p>
+      </Section>
+
+      <Section title="8. Data Deletion">
+        <p>
+          You have the right to request the deletion of your data at any time. Here is how you can
+          delete your data:
+        </p>
+        <ul className="list-disc list-inside space-y-2 pl-2">
+          <li>
+            <strong className="text-white">Local Data</strong> — You can delete all locally stored
+            fitness data by uninstalling the Fit Track app from your device, or by clearing the
+            app's data through your device's Settings → Apps → Fit Track → Clear Data.
+          </li>
+          <li>
+            <strong className="text-white">AI Chat History</strong> — To request deletion of your
+            AI Coach chat history stored on our servers, send an email to{" "}
+            <a
+              href="mailto:support@tangiblespark.com"
+              className="text-green-400 underline hover:text-green-300"
+            >
+              support@tangiblespark.com
+            </a>{" "}
+            with the subject line{" "}
+            <strong className="text-white">"Data Deletion Request"</strong>. Include your account
+            email or user identifier so we can locate your data.
+          </li>
+          <li>
+            <strong className="text-white">Account Deletion</strong> — To delete your account and
+            all associated data, contact us at{" "}
+            <a
+              href="mailto:support@tangiblespark.com"
+              className="text-green-400 underline hover:text-green-300"
+            >
+              support@tangiblespark.com
+            </a>{" "}
+            with the subject line{" "}
+            <strong className="text-white">"Account Deletion Request"</strong>.
+          </li>
+        </ul>
+        <p>
+          We will process all deletion requests within{" "}
+          <strong className="text-white">30 days</strong> of receiving them. You will receive a
+          confirmation email once your data has been deleted. Please note that once data is deleted,
+          it <strong className="text-white">cannot be recovered</strong>.
+        </p>
+      </Section>
+
+      <Section title="9. Changes to This Policy">
         <p>
           We may update this Privacy Policy from time to time. Changes will be reflected with an
           updated date at the top of this page. Continued use of the app after changes constitutes
@@ -171,7 +240,7 @@ function PrivacyPolicyPage() {
         </p>
       </Section>
 
-      <Section title="8. Contact">
+      <Section title="10. Contact">
         <p>
           If you have any questions or concerns about this Privacy Policy, please contact us through
           the support channels listed on our website.
